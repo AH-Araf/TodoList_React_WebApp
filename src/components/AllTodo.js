@@ -5,7 +5,7 @@ import TodoMain from './TodoMain';
 import TodoListCustom from './TodoListCustom';
 uuidv4();
 
-const LocalStorage = () => {
+const AllTodo = () => {
     const [todos, setTodos] = useState([])
     const [searchTerm, setSerachTerm] = useState('')
 
@@ -73,4 +73,4 @@ const LocalStorage = () => {
     );
 };
 
-export default LocalStorage;
+export default AllTodo;

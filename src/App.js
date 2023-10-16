@@ -1,10 +1,10 @@
 import './App.css';
-import LocalStorage from './components/LocalStorage';
+import AllTodo from './components/AllTodo';
 
 function App() {
   return (
     <div>
-      <LocalStorage></LocalStorage>
+      <AllTodo></AllTodo>
     </div>
   );
 }
