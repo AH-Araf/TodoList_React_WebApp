@@ -6,7 +6,7 @@ const TodoMain = ({ task, deleteTodo, editTodo }) => {
         <div>
             <div className="Todo-Main">
                 <p>{task.task}</p>
-                <div>
+                <div className='all-feature'>
                     <CopyToClipboard text={task.task}>
                         <button className='btn-c'>Copy</button>
                     </CopyToClipboard>

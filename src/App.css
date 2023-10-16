@@ -1,45 +1,64 @@
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  background-color: #E6E6FA;
 }
-.todo-header{
-  color: red;
+.todo-header {
+  color: #2F4F4F;
 }
-.TodoWrap{
+
+.TodoWrap {
   background: black;
   margin-top: 70px;
   padding: 30px;
   border-radius: 10px;
 }
-.TodoList{
+
+.TodoList {
   width: 100%;
   margin-bottom: 10px;
 }
-.input-box{
+
+.input-box {
   outline: none;
   background: none;
-  border: 1px solid green;
+  border: 2px solid white;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 300px;
   color: #fff;
 }
+.search-box{
+  border: 3px solid red;
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
+  width: 320px;
+  color: black;
+  font-weight: 600;
+  font-size: medium;
+}
 .addButton {
   background: green;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  padding: 9px;
+  cursor: pointer;
+}
+.addButton:hover{
+  background: #2F4F4F;
   border-bottom-right-radius: 14px;
   color: #fff;
   border: none;
-  padding: 0.55rem;
+  padding: 9px;
   cursor: pointer;
 }
 
-.Todo-Main{
+.Todo-Main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: gray;
+  background: #2F4F4F;
   color: #fff;
   padding: 0px 10px;
   border-radius: 2px;
@@ -47,42 +66,78 @@ body{
   margin-bottom: 1rem;
 }
 
-.btn-u{
+.btn-u {
   cursor: pointer;
   background-color: green;
   color: white;
   font-size: medium;
   margin-left: 10px;
-  padding:4px;
+  padding: 4px;
   border-radius: 8px;
   border: 1px solid white;
 }
-.btn-u:hover{
+.btn-u:hover {
   cursor: pointer;
   background-color: darkgreen;
   color: white;
   font-size: medium;
   margin-left: 10px;
-  padding:4px;
+  padding: 4px;
   border-radius: 8px;
 }
-.btn-d{
+
+.btn-d {
   cursor: pointer;
   background-color: orangered;
   color: white;
   font-size: medium;
   margin-left: 10px;
-  padding:4px;
+  padding: 4px;
   border-radius: 8px;
   border: 1px solid white;
 }
-.btn-d:hover{
+.btn-d:hover {
   cursor: pointer;
   background-color: darkred;
   color: white;
   font-size: medium;
   margin-left: 10px;
-  padding:4px;
+  padding: 4px;
   border-radius: 8px;
 }
- 
+
+.btn-c {
+  cursor: pointer;
+  background-color: rgb(112, 167, 141);
+  color: white;
+  font-size: medium;
+  margin-left: 10px;
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+.btn-c:hover {
+  cursor: pointer;
+  background-color: rgb(95, 146, 122);
+  color: white;
+  font-size: medium;
+  margin-left: 10px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+/* Responsive for mobile device */
+@media only screen and (max-width: 516px) {
+  .all-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 7px;
+  }
+  .input-boxAndbtn{
+    display: flex;
+  }
+  .search-box{
+    width: 230px;
+  }
+}

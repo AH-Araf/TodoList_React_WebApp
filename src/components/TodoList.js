@@ -12,8 +12,10 @@ const TodoList = ({ addTodo }) => {
     };
     return (
         <form onSubmit={handleSubmit} className="TodoList">
-            <input type="text" value={value} onChange={(e) => setValue(e.target.value)} className="input-box" placeholder='Add your task here...' />
-            <button type="submit" className='addButton'>Add Task</button>
+            <div className='input-boxAndbtn'>
+                <input type="text" value={value} onChange={(e) => setValue(e.target.value)} className="input-box" placeholder='Add your task here...' />
+                <button type="submit" className='addButton'>Add Task</button>
+            </div>
         </form>
     );
 };
