@@ -45,7 +45,7 @@ const LocalStorage = () => {
                 <input
                     className='search-box'
                     type="text"
-                    placeholder='Search todos'
+                    placeholder='Search todo items'
                     onChange={event => {
                         setSerachTerm(event.target.value)
                     }}
